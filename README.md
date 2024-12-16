@@ -10,13 +10,16 @@
 
 * This project utilizes the following core libraries:
   * pyshark
-  * langchain
+  * microsoft autogen
   * ollama
 
 * The application is intended to:
   * Collect video traffic information on a network interface
   * Generate simulated traffic using an LLM (with tool calling functionality)
   * Show generated data in real time + in file output for longevity
+
+* Output is located at `output.txt`
+* By default, packets are stored at `packets.txt`
 
 ## Ollama setup
 
