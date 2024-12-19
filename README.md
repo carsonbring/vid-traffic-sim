@@ -3,7 +3,7 @@
 ## Outline
 
 ---
-**NOTE**
+
 Pyshark is a Python wrapper for tshark, allowing python packet parsing using wireshark dissectors.
 PyShark was used to monitor network traffic on a user-selected network interface.
 After the user inputs an IPv4 address or a port that is sending video traffic to the selected network interface, the simulator program filters the incoming network traffic.
@@ -18,33 +18,20 @@ The output is stored in output.txt and it includes the generated packets along w
 
 ## Results
 
-* Data
+### Data
 
----
-**NOTE**
 Collecting the data through Pyshark was a bit difficult due to some restraints of bpf filtering and the fact that streaming/video services assign a dynamic port and usually a dynamic host address depending on which server its coming from.
 Because of this, we bpf filter based off of udp and either a port or IPv4 address instead and put the responsibility on the user to use wireshark in tandem with our program
 Using this technique, we are able to capture video data effectively
 
----
-
-* Analysis
-
----
-**NOTE**
+### Analysis
 
 Since we are decently familiar with Autogen from previous projects, the analysis was more straight forward since we just created an agentic workflow that takes into account the generation and review aspects of the assignment.
 Both agents are using Llama3.2:3b, and most modern computers will be able to run a model that small.
 
----
+### Discussion
 
-* Discussion
-
----
-**NOTE**
 Overall, we are fairly happy with the results of our project, and the choice to use a review/generation autogen workflow was a good one. Its very interesting to watch the agents interact with each other and ensure that their packet output fits in with the original data provided
-
----
 
 ## Demo
 
